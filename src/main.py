@@ -3,10 +3,10 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 def main():
-    img = cv.imread('pictures\images\kerning_city.png', cv.IMREAD_GRAYSCALE)
+    img = cv.imread('pictures/images/kerning_city.png', cv.IMREAD_GRAYSCALE)
     assert img is not None, "file could not be read, check with os.path.exists()"
     img2 = img.copy()
-    template = cv.imread('template.jpg', cv.IMREAD_GRAYSCALE)
+    template = cv.imread('pictures/templates/icons/player.png', cv.IMREAD_GRAYSCALE)
     assert template is not None, "file could not be read, check with os.path.exists()"
     w, h = template.shape[::-1]
     # All the 6 methods for comparison in a list
